@@ -26,6 +26,9 @@ Route::get('/resume', [ResumeController::class, 'index'])->name("resume");
 Route::get('/projects', [ProjectController::class, 'index'])->name("projects");
 Route::get('/projects/{project}', [ProjectController::class, 'show'])->name("project");
 
+Route::get('/sierrassymphony', fn() => view("sierrassymphony.about"))->name("sierrassymphony");
+Route::get('/sierrassymphony/delete', fn() => view("sierrassymphony.delete-account"))->name("sierrassymphony.delete");
+
 // Route::get("/home", fn() => view("home"))->name("home");
 
 
