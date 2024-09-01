@@ -185,7 +185,7 @@
                                     "{{ trim($point) }}",
                                     @endforeach
                                 ]
-                            }
+                            },
                             @endforeach
                         ]
                     ]
