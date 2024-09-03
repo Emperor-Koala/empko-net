@@ -13,6 +13,7 @@
                     <span class="text-center dark:text-gray-200 text-xl font-bold mt-1.5 opacity-85 mb-3">Part-Time Tinkerer</span>
                     <x-hex-button href="/resume" class="w-full h-14 my-1.5 text-white text-xl">Résumé</x-hex-button>
                     <x-hex-button href="/projects" class="w-full h-14 my-1.5 text-white text-xl">Portfolio</x-hex-button>
+                    <x-hex-button href="/devlog" class="w-full h-14 my-1.5 text-white text-xl">DevLog</x-hex-button>
                     <x-hex-button href="https://github.com/Emperor-Koala" class="w-full h-14 my-1.5 text-white text-xl" variant="github">
                         <x-icon.github class="w-6 h-6 mr-2 fill-white" />
                         GitHub

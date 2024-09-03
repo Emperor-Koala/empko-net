@@ -79,7 +79,7 @@
     </head>
     <body class="font-sans text-gray-900 antialiased bg-neutral-100 dark:bg-neutral-800">
         <div class="min-h-screen flex flex-col">
-            <header class="h-16 bg-neutral-200 dark:bg-neutral-700 shadow-md shadow-black/20 fixed left-0 top-0 w-full z-50 select-none">
+            <header class="h-16 bg-neutral-200 dark:bg-neutral-700 shadow-md shadow-black/20 fixed left-0 top-0 w-full z-50 select-none overflow-hidden">
                 <nav class="h-16 md:flex justify-between md:max-w-2xl lg:max-w-4xl xl:max-w-6xl md:mx-auto">
                     <div class="h-full flex flex-row justify-between items-center px-16 md:px-0">
                         <img class="h-8" src="{{ asset('storage/images/logo_with_text.svg') }}" />
@@ -107,6 +107,10 @@
                             <li class="flex-1 md:w-28 md:h-full">
                                 <x-hex-button href="/projects" class="hidden md:flex h-full dark:text-white text-xl" variant="link">Projects</x-hex-button>
                                 <a href="/projects" class="md:hidden dark:text-white hover:bg-black/20 active:bg-black/40 dark:hover:bg-white/20 dark:active:bg-white/40 px-3 py-2 flex flex-row items-center justify-between transition-colors cursor-pointer">Projects</a>
+                            </li>
+                            <li class="flex-1 md:w-28 md:h-full">
+                                <x-hex-button href="/devlog" class="hidden md:flex h-full dark:text-white text-xl" variant="link">DevLog</x-hex-button>
+                                <a href="/devlog" class="md:hidden dark:text-white hover:bg-black/20 active:bg-black/40 dark:hover:bg-white/20 dark:active:bg-white/40 px-3 py-2 flex flex-row items-center justify-between transition-colors cursor-pointer">DevLog</a>
                             </li>
                             <li class="hidden md:inline md:w-10 md:h-full">
                                 <x-hex-button class="theme__toggle h-full w-full" variant="link">

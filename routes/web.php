@@ -8,6 +8,9 @@ use App\Http\Controllers\SoftwareController;
 use App\Http\Controllers\ExperienceController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\FileController;
+use App\Http\Controllers\DevlogController;
+use App\Http\Controllers\DevlogPostController;
+use App\Http\Controllers\DevlogSeriesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,6 +28,11 @@ Route::get('/', fn() => view("home"))->name("home");
 Route::get('/resume', [ResumeController::class, 'index'])->name("resume");
 Route::get('/projects', [ProjectController::class, 'index'])->name("projects");
 Route::get('/projects/{project}', [ProjectController::class, 'show'])->name("project");
+
+Route::get('/devlog', [DevlogController::class, 'index'])->name("devlog");
+Route::get('/devlog/search', [DevlogController::class, 'search'])->name("devlog.search");
+Route::get('/devlog/post/{post}', [DevlogPostController::class, 'show'])->name("devlog.post");
+Route::get('/devlog/series/{series}', [DevlogSeriesController::class, 'show'])->name("devlog.series");
 
 Route::get('/sierrassymphony', fn() => view("sierrassymphony.about"))->name("sierrassymphony");
 Route::get('/sierrassymphony/delete', fn() => view("sierrassymphony.delete-account"))->name("sierrassymphony.delete");
