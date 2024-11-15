@@ -29,8 +29,8 @@ class ResumeController extends Controller
             'platforms' => array_map(fn ($soft) => $soft['name'], Software::query()->where('type', 'platform')->get()->toArray()),
             'programs' => array_map(fn ($soft) => $soft['name'], Software::query()->where('type', 'program')->get()->toArray()),
         ];
-        $experience = Experience::query()->orderByRaw('ISNULL(end_date), end_date DESC')->limit(3)->get();
-        $education = School::query()->orderByRaw('ISNULL(end_date), end_date DESC')->limit(3)->get();
+        $experience = Experience::query()->orderByRaw('ISNULL(end_date) DESC, end_date DESC')->limit(3)->get();
+        $education = School::query()->orderByRaw('ISNULL(end_date) DESC, end_date DESC')->limit(3)->get();
         return view('resume', compact('profileInfo', 'languages', 'software', 'experience', 'education'));
     }
 
