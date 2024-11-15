@@ -95,7 +95,7 @@
                         </div>
                     </div>
                     <div id="nav__menu" class="absolute left-0 top-14 w-full h-[calc(100vh-4rem)] overflow-auto pointer-events-none opacity-0 transition-[opacity,top] md:static md:w-min md:h-auto md:!pointer-events-auto md:!opacity-100 md:!transition-none md:my-auto">
-                        <ul class="bg-neutral-300 dark:bg-neutral-600 md:!bg-transparent md:flex md:flex-row md:h-8 md:gap-x-4 items-center">
+                        <ul class="bg-neutral-300 dark:bg-neutral-600 md:!bg-transparent md:flex md:flex-row md:h-9 md:gap-x-4 items-center">
                             <li class="flex-1 md:w-20 md:h-full">
                                 <x-hex-button href="/" class="hidden md:flex h-full dark:text-white text-xl" variant="link">Home</x-hex-button>
                                 <a href="/" class="md:hidden dark:text-white hover:bg-black/20 active:bg-black/40 dark:hover:bg-white/20 dark:active:bg-white/40 px-3 py-2 flex flex-row items-center justify-between transition-colors cursor-pointer">Home</a>
